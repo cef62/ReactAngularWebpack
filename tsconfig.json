@@ -1,0 +1,63 @@
+{
+  "compilerOptions": {
+    "noEmit": true,
+    "sourceMap": true,
+    "strictNullChecks": true,
+    "noImplicitAny": false,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "target": "es5",
+    "baseUrl": "./",
+    "moduleResolution": "node",
+    "allowJs": true,
+    "checkJs": true,
+    "pretty": true,
+    "jsx": "react",
+    "isolatedModules": false,
+    "allowSyntheticDefaultImports": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "skipLibCheck": true,
+    "downlevelIteration": true,
+    "importHelpers": true,
+    "module": "commonjs",
+    "outDir": "dist",
+    "resolveJsonModule": true,
+    // "incremental": true,
+    // "tsBuildInfoFile": "./buildcache/front-end",
+    "lib": [
+      "es5",
+      "es6",
+      "es7",
+      "es2015.core",
+      "es2015.collection",
+      "es2015.promise",
+      "es2015.generator",
+      "es2015.iterable",
+      "es2016.array.include",
+      "esnext.asynciterable",
+      "es2017",
+      "es2017.string",
+      "es2018",
+      "dom",
+      "dom.iterable",
+      "scripthost",
+      "WebWorker"
+    ],
+    "paths": {
+      "@resources/*": ["./resources/*"],
+    }
+  },
+  "exclude": [
+    "node_modules/",
+    "dist/"
+  ],
+  "include": [
+    "./d.ts/**/*",
+    "./src/react/**/*",
+    "./src/app/components/reactWrappers/*",
+    "./webpack/**/*"
+  ]
+}
